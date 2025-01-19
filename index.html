@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Coming soon page by MohabbatRJ</title>
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/icons.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="main-area">
+			<div class="logo">
+				<img src="images/logo.png" alt="coming soon theme"> 
+			</div>
+			<h1>Comming soon!</h1>
+			<h2>Be ready, there is just:</h2>
+			<ul class="countdown">
+						<li>
+							<span class="days">00</span>
+							<p class="days_ref">days</p>
+						</li>
+						<li>
+							<span class="hours">OO</span>
+							<p class="hours_ref">hours</p>
+						</li>
+						<li>
+							<span class="minutes">00</span>
+							<p class="minutes_ref">minutes</p>
+						</li>
+						<li>
+							<span class="seconds">00</span>
+							<p class="seconds_ref">seconds</p>
+						</li>
+					</ul>
+			<form>
+				<input type="text" placeholder="Enter your email">
+				<input type="submit" value="Keep me updated">
+			</form>
+			<ul class="social">
+				<li><a href=""><i class="icon-facebook"></i></a></li>
+				<li><a href=""><i class="icon-twitter-1"></i></a></li>
+				<li><a href=""><i class="icon-behance"></i></a></li>
+				<li><a href=""><i class="icon-dribbble-1"></i></a></li>
+				<li><a href=""><i class="icon-pinterest-circled"></i></a></li>
+				<li><a href=""><i class="icon-gplus-1"></i></a></li>
+				
+			</ul>
+			<div class="copyright">
+				<p>Develop by <a href="https://github.com/MohabbatRJ" target="_blank">MohabbatRJ</a></p>
+			</div>
+		</div>
+	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.downCount.js"></script>
+	<script>
+		$(document).ready(function () {
+        $('.countdown').downCount({
+            date: '01/19/2030 00:00:00', 
+            offset: +5.5 
+        }, function () {
+            alert('The event has started!');
+        });
+    });
+	</script>
+</body>
+</html>
