@@ -1,29 +1,10 @@
 $(function () {
 	'use strict';
 
-	var options = {
-		wrapper: ".wrapper",
-		minHeight: 500
-	};
-
-	function setHeight() {
-		var documentHeight = $(window).height();
-
-		if (documentHeight > options.minHeight) {
-			$(options.wrapper).height(documentHeight);
-		}
-	}
-
-	// setHeight();
-
-	$(window).resize(function () {
-		// setHeight();
-	})
-
 	$('.countdown').downCount({
-		date: '05/17/2022 9:00:00',
+		date: '01/19/2030 00:00:00', 
 		offset: +10
 	}, function () {
-
+		alert('The event has started!');
 	});
 });
